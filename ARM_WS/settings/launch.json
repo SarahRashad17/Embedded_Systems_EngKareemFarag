@@ -1,0 +1,67 @@
+{
+   "configurations" : [
+      {
+         "args" : [],
+         "download" : {
+            "deviceMacros" : [ "$TOOLKIT_DIR$/config/debugger/TexasInstruments/TM4C123.dmac" ],
+            "performMassErase" : false,
+            "suppressAllDownloads" : false,
+            "suppressProgramDownload" : false,
+            "verifyAllDownloads" : false
+         },
+         "driver" : "Simulator",
+         "driverOptions" : [
+            "--endian=little",
+            "--cpu=Cortex-M4",
+            "--fpu=VFPv4_SP",
+            "-p",
+            "$TOOLKIT_DIR$/config/debugger/TexasInstruments/TM4C123GH6PM.ddf",
+            "--semihosting",
+            "--device=TM4C123GH6PM",
+            "--multicore_nr_of_cores=1"
+         ],
+         "handleCRunEvents" : false,
+         "leaveTargetRunning" : false,
+         "name" : "arm_ws - Debug",
+         "plugins" : [],
+         "program" : "$PROJ_DIR$/Debug/Exe/arm_ws.out",
+         "projectPath" : "D:\\Courses\\Embedded_Systems\\Embedded_Systems_EngKareemFarag\\ARM_WS\\arm_ws.ewp",
+         "request" : "launch",
+         "setupMacros" : [],
+         "stopOnSymbol" : "main",
+         "target" : "arm",
+         "type" : "cspy",
+         "workbenchPath" : "D:\\iar\\ewarm-10.10.2"
+      },
+      {
+         "args" : [],
+         "download" : {
+            "deviceMacros" : [],
+            "performMassErase" : false,
+            "suppressAllDownloads" : false,
+            "suppressProgramDownload" : false,
+            "verifyAllDownloads" : false
+         },
+         "driver" : "Simulator",
+         "driverOptions" : [
+            "--endian=little",
+            "--cpu=Cortex-M3",
+            "--fpu=None",
+            "--semihosting=none",
+            "--multicore_nr_of_cores=1"
+         ],
+         "handleCRunEvents" : false,
+         "leaveTargetRunning" : false,
+         "name" : "arm_ws - Release",
+         "plugins" : [],
+         "program" : "$PROJ_DIR$/Release/Exe/arm_ws.out",
+         "projectPath" : "D:\\Courses\\Embedded_Systems\\Embedded_Systems_EngKareemFarag\\ARM_WS\\arm_ws.ewp",
+         "request" : "launch",
+         "setupMacros" : [],
+         "stopOnSymbol" : "main",
+         "target" : "arm",
+         "type" : "cspy",
+         "workbenchPath" : "D:\\iar\\ewarm-10.10.2"
+      }
+   ]
+}

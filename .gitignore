@@ -1,1 +1,4 @@
-
+# Compiled source #
+########
+**/ARM_WS/Debug
+**/ARM_WS/Release
